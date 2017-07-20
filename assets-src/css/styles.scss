@@ -1,3 +1,8 @@
+$gray: #dcddde;
+$yellow: #ffef00;
+$lightblue: #0079c1;
+$darkblue:	#0667b2;
+
 form,
 p,
 ul,
@@ -28,7 +33,7 @@ article,
 section,
 hgroup,
 nav,
-figure	{
+figure {
 	display: block;
 }
 
@@ -40,4 +45,9 @@ figure	{
 
 body {
 	font-family: Arial, sans-serif;
+}
+
+.search_bar {
+	background-color: $gray;
+	
 }
