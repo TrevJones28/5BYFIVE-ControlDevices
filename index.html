@@ -15,7 +15,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="/assets/css/styles.css">
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,6 +28,9 @@
 				svgeezy.init('nocheck', 'png'); // this will tell the plugin to not check images with a class of 'nocheck'
 			});
 		</script>
+		
+		<script src="https://use.typekit.net/vvv4fln.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
    
 </head>
 
@@ -36,9 +39,34 @@
 	
 	
 <div class="site_wrap">
-	
-	
-	
+
+	<header>
+		<div class="row search_bar">
+			<div class="flex_grid">
+				<div class="col usa_flag">
+					<figure><img src="/images/styles/american_flag.svg" /></figure>
+					<figcaption>Made in USA</figcaption>
+				</div>
+				<div class="col">
+					<nav class="secondary">
+						<ul>
+							<li><a href="">Home</a></li>
+							<li><a href="">News/Events</a></li>
+							<li><a href="">Careers</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col search">
+					<input id="search" name="search" type="text" placeholder="Search" required="">
+					<input type="submit" value="Search" class="search_btn">
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+
 </div>
 	
 	

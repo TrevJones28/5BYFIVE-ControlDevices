@@ -1,7 +1,8 @@
 $gray: #dcddde;
 $yellow: #ffef00;
 $lightblue: #0079c1;
-$darkblue:	#0667b2;
+$darkblue: #0667b2;
+$textgray: #77787b;
 
 form,
 p,
@@ -21,6 +22,7 @@ h6,
 td,
 tr,
 button,
+figure,
 input,
 fieldset {
 	margin: 0;
@@ -37,17 +39,106 @@ figure {
 	display: block;
 }
 
-*
-	::before,
-	::after {
+* { 
 	box-sizing: border-box;
 }
 
-body {
-	font-family: Arial, sans-serif;
+*:before,
+*:after {
+	box-sizing: border-box;
 }
 
-.search_bar {
-	background-color: $gray;
+a {
+	color: $darkblue;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+.flex_grid {
+	display: flex;
+}
+
+.col {
+	flex: 1;
+	flex-wrap: nowrap;
+}
+
+body {
+	font-family: "myriad-pro", Arial, sans-serif;
+	font-size: 62.5%;
+	color: $textgray;
+}
+
+h1,
+h2 {
+	font-family: "eurostile", Arial, sans-serif;
+}
+
+.row {
+	width: 100%;
+	padding: 0 5%;
+}
+
+header {
+	.search_bar {
+		background-color: $gray;
+		padding: 8px 5%;
+	}
 	
+	.usa_flag {
+		flex: 0 1 200px;
+				
+		img {
+		width: 46px;
+		float: left;
+		margin-right: 10px;
+		}
+		
+		figcaption {
+			color: $darkblue;
+			font-size: 1.4em;
+			padding: 4px 0;
+			text-transform: uppercase;
+		}
+	}
+	.secondary {
+		text-align: right;
+		
+		ul {
+			list-style-type: none;
+			padding: 3px 0 0 0;
+			
+			li {
+				display: inline-block;
+				margin-right: 15px;
+				font-size: 1.6em;
+			}
+		}
+	}
+	.search {
+		
+		flex: 0 1 400px;
+		
+		input[type=text] {
+		border: 1px solid #c4c4c4;
+		height: 26px;
+		margin: 0;
+		padding: 0 2%;
+		width: 75%;
+		}
+		
+		input[type=submit] {
+			background-color: $darkblue;
+			border: 0;
+			color: #fff;
+			display: inline-block;
+			height: 26px;
+			width: 24%;
+		}
+	}
 }
