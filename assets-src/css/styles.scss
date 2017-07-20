@@ -4,6 +4,9 @@ $lightblue: #0079c1;
 $darkblue: #0667b2;
 $textgray: #77787b;
 
+$font_heading: eurostile, Arial, sans-serif;
+$font_body: myriad-pro, Arial, sans-serif;
+
 form,
 p,
 ul,
@@ -69,14 +72,14 @@ img {
 }
 
 body {
-	font-family: "myriad-pro", Arial, sans-serif;
+	font-family: $font_body;
 	font-size: 62.5%;
 	color: $textgray;
 }
 
 h1,
 h2 {
-	font-family: "eurostile", Arial, sans-serif;
+	font-family: $font_heading;
 }
 
 .row {
@@ -115,7 +118,7 @@ header {
 			
 			li {
 				display: inline-block;
-				margin-right: 15px;
+				margin-right: 20px;
 				font-size: 1.6em;
 			}
 		}
@@ -142,3 +145,37 @@ header {
 		}
 	}
 }
+
+.logo_bar {
+	padding: 40px 5%;
+	background: #fff;
+	
+	.col.logo {
+		flex: 0 1 343px;
+	}
+	
+	nav.primary {
+		text-align: right;
+		font-family: $font_heading;
+		font-weight: 600;
+		text-transform: uppercase;
+		
+		ul {
+			list-style-type: none;
+			padding: 36px 0 0 0;
+			
+			li {
+				display: inline-block;
+				margin-left: 20px;
+				font-size: 2em;
+			}
+		}
+		
+	}
+}
+
+
+
+
+
+
