@@ -88,7 +88,7 @@ h2 {
 }
 
 header {
-	.search_bar {
+	.row.search_bar {
 		background-color: $gray;
 		padding: 8px 5%;
 	}
@@ -146,7 +146,7 @@ header {
 	}
 }
 
-.logo_bar {
+.row.logo_bar {
 	padding: 40px 5%;
 	background: #fff;
 	
@@ -174,8 +174,37 @@ header {
 	}
 }
 
-
-
+.row.hero {
+	min-height: 600px;
+	padding: 0;
+	border-top: 8px solid $yellow;
+	
+	.video_holder {
+		min-height: 466px;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+		background-size: cover;
+		background-image: none;
+		border-bottom: 85px solid $gray;
+		
+		 
+		.main {
+			position: absolute;
+			min-width: 100%;
+			min-height: 100%;
+			/*width: 100%;*/
+			height: auto;
+			z-index: -100;
+			/*background-size: cover;*/
+			transition: 1s opacity;
+			top: -50%;
+			left: 50%;
+			transform: translate(-50%,0);
+			-webkit-transform: translate(-50%,0);
+		}
+	}
+}
 
 
 
