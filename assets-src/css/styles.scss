@@ -87,6 +87,16 @@ h2 {
 	padding: 0 5%;
 }
 
+.cta_button {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: yellow;
+    padding: 15px 20px;
+    display: inline-block;
+    font-size: 1.8em;	
+}
+
 header {
 	.row.search_bar {
 		background-color: $gray;
@@ -175,12 +185,13 @@ header {
 }
 
 .row.hero {
-	min-height: 600px;
+	min-height: 631px;
 	padding: 0;
 	border-top: 8px solid $yellow;
+	position: relative;
 	
 	.video_holder {
-		min-height: 466px;
+		min-height: 551px;
 		overflow: hidden;
 		position: relative;
 		z-index: 0;
@@ -204,7 +215,43 @@ header {
 			-webkit-transform: translate(-50%,0);
 		}
 	}
+	
+	.color_overlay {
+		width: 84%;
+		/*background-color: rgba(0, 121, 193, 0.7);*/
+		background: -moz-linear-gradient(left, rgba(0,121,193,1) 0%, rgba(0,121,193,0.75) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,121,193,1) 0%,rgba(0,121,193,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,121,193,1) 0%,rgba(0,121,193,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#bf0079c1',GradientType=1 ); /* IE6-9 */
+		margin-left: 0px;
+	    top: 0;
+	    position: absolute;
+	    min-height: 466px;
+	    transform-origin: top left;
+	    -ms-transform: skew(-30deg, 0deg);
+	    -webkit-transform: skew(-30deg, 0deg);
+	    transform: skew(-30deg, 0deg);
+	    
+	}
+	
+	.text_box {
+		color: #fff;
+		padding-left: 5%;
+		width: 65%;
+		top: 50px;
+		position: absolute;
+			
+		h1 {
+			font-family: $font_heading;
+			font-size: 5.5em;
+			font-weight: 300;
+			line-height: 1.2em;
+			margin-bottom: 30px;
+		}
+	}
 }
+
+
 
 
 
