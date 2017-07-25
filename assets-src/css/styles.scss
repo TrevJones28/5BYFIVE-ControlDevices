@@ -271,7 +271,7 @@ header {
 		position: absolute;
 		width: 562px;
 		top: 50px;
-		left: -100px;
+		left: -6%;
 	}
 	
 	.plax_plusline {
@@ -327,6 +327,13 @@ header {
 	    top: 234px;
 	    width: 454px;
 	    left: 66%;
+	    opacity: .15;
+	}
+	.plax_diag_draw_4 {
+		position: absolute;
+	    top: 196px;
+	    width: 550px;
+	    left: 34%;
 	    opacity: .15;
 	}
 }
