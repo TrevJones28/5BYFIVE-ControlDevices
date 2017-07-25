@@ -75,6 +75,7 @@ body {
 	font-family: $font_body;
 	font-size: 62.5%;
 	color: $textgray;
+	background: url("/images/styles/bg_dots_1.svg") repeat-y top left 12px / 208px;
 }
 
 h1,
@@ -189,6 +190,7 @@ header {
 	padding: 0;
 	border-top: 8px solid $yellow;
 	position: relative;
+	overflow: hidden;
 	
 	.video_holder {
 		min-height: 551px;
@@ -197,7 +199,7 @@ header {
 		z-index: 0;
 		background-size: cover;
 		background-image: none;
-		border-bottom: 85px solid $gray;
+		border-bottom: 85px solid rgba(171,171,171, .4);
 		
 		 
 		.main {
@@ -221,7 +223,7 @@ header {
 		/*background-color: rgba(0, 121, 193, 0.7);*/
 		background: -moz-linear-gradient(left, rgba(0,121,193,1) 0%, rgba(0,121,193,0.75) 100%); /* FF3.6-15 */
 		background: -webkit-linear-gradient(left, rgba(0,121,193,1) 0%,rgba(0,121,193,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to right, rgba(0,121,193,1) 0%,rgba(0,121,193,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background: linear-gradient(to right, rgba(0,121,193,1) 0%,rgba(0,121,193,0.75) 100%)/*, url("/images/styles/bg_dots.svg") repeat-y top left 12px / 208px*/; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#bf0079c1',GradientType=1 ); /* IE6-9 */
 		margin-left: 0px;
 	    top: 0;
@@ -231,6 +233,21 @@ header {
 	    -ms-transform: skew(-30deg, 0deg);
 	    -webkit-transform: skew(-30deg, 0deg);
 	    transform: skew(-30deg, 0deg);
+	    
+	    &:after {
+			content: "";
+		    position: absolute;
+		    width: 220px;
+		    top: 0;
+		    left: 134px;
+		    z-index: -1;
+		    opacity: .4;
+		    background: url("/images/styles/bg_dots_1.svg") repeat-y top left 12px/208px;
+		    -webkit-transform: rotate(30deg);
+		    -webkit-transform: skew(-30deg, 0deg);
+		    transform: skew(30deg, 0deg);
+		    min-height: 466px;
+	    }
 	    
 	}
 	
@@ -248,6 +265,69 @@ header {
 			line-height: 1.2em;
 			margin-bottom: 30px;
 		}
+	}
+	
+	.plax_circle {
+		position: absolute;
+		width: 562px;
+		top: 50px;
+		left: -100px;
+	}
+	
+	.plax_plusline {
+		position: absolute;
+		width: 1300px;
+		bottom: 32px;
+		left: 232px;
+		opacity: .2;
+	}
+
+	.plax_plus_blue {
+		position: absolute;
+		width: 50px;
+		bottom: 10px;
+		left: 11%;
+		opacity: .3;
+	}
+
+	.plax_plus_green {
+		position: absolute;
+		width: 50px;
+		bottom: 10px;
+		left: 50%;
+		opacity: .3;
+	}
+	
+	.plax_plus_red {
+		position: absolute;
+		width: 50px;
+		bottom: 10px;
+		left: 92%;
+		opacity: .3;
+	}
+	
+	.plax_diag_draw_1 {
+		position: absolute;
+	    top: 59px;
+	    width: 579px;
+	    left: -155px;
+	    opacity: .2;		
+	}
+
+	.plax_diag_draw_2 {
+	    position: absolute;
+	    top: 179px;
+	    width: 500px;
+	    left: 27%;
+	    opacity: .15;	
+	}
+
+	.plax_diag_draw_3 {
+	    position: absolute;
+	    top: 234px;
+	    width: 454px;
+	    left: 66%;
+	    opacity: .15;
 	}
 }
 
