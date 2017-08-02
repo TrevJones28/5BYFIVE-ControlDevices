@@ -346,6 +346,7 @@ header {
 	    left: 66%;
 	    opacity: .15;
 	}
+	
 	.plax_diag_draw_4 {
 		position: absolute;
 	    top: 196px;
@@ -530,6 +531,8 @@ $bgColor        : lighten($bodyBG, 16);
 	
 	.sub_nav_holder {
 		border-bottom: 85px solid rgba(171,171,171, .4);
+		position: relative;
+		z-index: 1;
 		
 		nav {
 			background-color: $darkblue;
@@ -562,7 +565,100 @@ $bgColor        : lighten($bodyBG, 16);
 			}
 		} 
 	}
+	
+	.plax_circle {
+		position: absolute;
+		width: 562px;
+		bottom: 45px;
+		left: -6%;
+	}
+	
+	.plax_plusline {
+		position: absolute;
+		width: 1300px;
+		bottom: 75px;
+		left: 232px;
+		opacity: .2;
+	}
+
+	.plax_plus_blue {
+		position: absolute;
+		width: 50px;
+		bottom: 56px;
+		left: 11%;
+		opacity: .3;
+	}
+
+	.plax_plus_green {
+		position: absolute;
+		width: 50px;
+		bottom: 56px;
+		left: 50%;
+		opacity: .3;
+	}
+	
+	.plax_plus_red {
+		position: absolute;
+		width: 50px;
+		bottom: 56px;
+		left: 92%;
+		opacity: .3;
+	}
+
+	.plax_diag_draw_1 {
+		position: absolute;
+	    bottom: 59px;
+	    width: 579px;
+	    right: 24%;
+	    opacity: .2;	
+	}
+
+	.plax_diag_draw_3 {
+	    position: absolute;
+	    bottom: 22px;
+	    width: 454px;
+	    right: 4%;
+	    opacity: .15;	
+	}
+
 }
+
+
+.main_wrap {
+	padding: 0px 5% 0px 0px;
+	overflow: visible;
+	display: flex;
+}
+
+.sidebar_wrap {
+	height:100%;
+	float: left;
+	padding: 20px 3% 30px 5%;
+	flex: 1;
+	background-color: white;
+}
+
+.main_content_wrap {
+	/*width: 78%;
+	float: right;*/
+	margin-top: -43px;
+	flex: 5;
+	
+	h1.main_headline {
+		font-size: 4.5em;
+		font-weight: 400;
+		line-height: 1em;
+		color: $darkblue;
+		margin-bottom: 60px;
+	}
+
+	.breadcrumb {
+		font-size: 1.6em;
+		color: $darkblue;
+		margin-bottom: 10px;
+	}	
+}
+
 
 
 
