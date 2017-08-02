@@ -69,6 +69,7 @@ img {
 .col {
 	flex: 1;
 	flex-wrap: nowrap;
+	margin-left: 5%;
 }
 
 body {
@@ -76,6 +77,11 @@ body {
 	font-size: 62.5%;
 	color: $textgray;
 	background: url("/images/styles/bg_dots_1.svg") repeat-y top left 12px / 208px;
+}
+
+p {
+	font-size: 1.6em;
+	margin-bottom: 20px;
 }
 
 h1,
@@ -106,7 +112,6 @@ h2 {
 		font-weight: 300;
 		line-height: 50px;
 		margin-bottom: 30px;
-		text-align: center;
 	}
 }
 
@@ -180,7 +185,7 @@ header {
 	nav.primary {
 		text-align: right;
 		font-family: $font_heading;
-		font-weight: 600;
+		font-weight: 500;
 		text-transform: uppercase;
 		
 		ul {
@@ -351,6 +356,9 @@ header {
 }
 
 .product_selector {
+	h2 {
+		text-align: center;		
+	}
 	
 	.product_row {
 		padding: 0;
@@ -359,6 +367,22 @@ header {
 			width: 253px;
 			height: 350px;
 			border: 1px solid #f1f1f1; border-left: none; 
+			
+			h3.label {
+				font-family: $font_body;
+				padding: 15px;
+			    /* height: 40px; */
+			    /* display: block; */
+			    background-color: rgba(238, 238, 238, 0.4);
+			    color: #0667b2;
+			    font-size: 19px;
+			    font-weight: 600;
+			    width: 100%;
+			    z-index: 1;
+			    bottom: 0;
+			    position: absolute; 
+			    white-space: pre-wrap;
+			}
 		}
 	}
 }
@@ -433,7 +457,7 @@ $bgColor        : lighten($bodyBG, 16);
         &:before{ left:0; text-indent:-40px; }
     }*/
   
-    > a{ 
+    /*> a{ 
       position:absolute; 
       margin:0; top:0; bottom:0; 
       color:#CCC; 
@@ -442,8 +466,8 @@ $bgColor        : lighten($bodyBG, 16);
         &:hover{ color:#FFF; }
         &.prev{ left:-20px; }
         &.next{ right:-20px; }
-    }
-    > .indicator{  
+    }*/
+    /*> .indicator{  
       pointer-events:none;
       position:absolute; 
       z-index:4;
@@ -457,7 +481,7 @@ $bgColor        : lighten($bodyBG, 16);
   
     &:hover{  
       > .indicator{ opacity:1; bottom:-10px; }
-    }
+    }*/
   
     > .wrap{ overflow:hidden; /*border-radius:5px;*/
       > ul{ 
@@ -489,4 +513,48 @@ $bgColor        : lighten($bodyBG, 16);
     }
 }
 
+footer {
+	border-top: 1px solid $gray; 
+	border-bottom: 60px solid $gray;
+	margin: 100px 0px 0px 0px;
+	padding: 100px 0;
+	
+	.col.contact {
+		padding-top: 80px;
+	}
+	
+	.company_name {
+		font-family: $font_heading;
+		font-size: 1.2em;
+		font-weight: 500;
+	}
+	
+	.main {
+		padding-bottom: 40px;
+	}
+	
+	article {
+		h1 {
+			font-family: $font_body;
+			font-size: 2em;
+			font-weight: 400;
+			margin-bottom: 30px;
+		}
+	}
+	
+	
+	.events {
+	
+		article {	
+			h1 {
+				margin-bottom: 5px;
+			}
+			time {
+				display: block;
+				font-size: 1.6em;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
 
