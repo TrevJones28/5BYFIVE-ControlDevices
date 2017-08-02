@@ -69,7 +69,7 @@ img {
 .col {
 	flex: 1;
 	flex-wrap: nowrap;
-	margin-left: 5%;
+	/*margin-left: 5%;*/
 }
 
 body {
@@ -513,11 +513,68 @@ $bgColor        : lighten($bodyBG, 16);
     }
 }
 
+
+// ===================================================
+
+	// Inside Pages
+
+// ======================================================
+
+
+.row.inside_hero {
+	min-height: 250px;
+	padding: 0;
+	border-top: 8px solid $yellow;
+	position: relative;
+	overflow: hidden;
+	
+	.sub_nav_holder {
+		border-bottom: 85px solid rgba(171,171,171, .4);
+		
+		nav {
+			background-color: $darkblue;
+			padding: 16px 5% 16px 5%;
+			text-align: right;
+			
+			ul {
+				list-style-type: none;
+				font-size: 1.6em;
+				
+				li {
+					display: inline-block;
+					padding: 0px 17px;
+					border-left: 1px solid white;
+					
+					&:first-child
+						{ 
+							border-left: none;
+						}
+					&:last-child
+						{ 
+							padding: 0px 0px 0px 17px;
+						}
+
+					
+					a {
+						color: white;
+					}
+				}
+			}
+		} 
+	}
+}
+
+
+
 footer {
 	border-top: 1px solid $gray; 
 	border-bottom: 60px solid $gray;
 	margin: 100px 0px 0px 0px;
 	padding: 100px 0;
+	
+	.col {
+		margin-left: 5%;
+	}
 	
 	.col.contact {
 		padding-top: 80px;
