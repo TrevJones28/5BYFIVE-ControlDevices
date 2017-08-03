@@ -783,7 +783,6 @@ div.tab {
     overflow: hidden;
     border: 1px solid #ffffff;
     width:81%;
-    margin-left: 5%;
     height:10%;
 }
 
@@ -822,9 +821,8 @@ div.tab button.active {
     padding: 4%;
     border: 1px solid #ccc;
     border-top: none;
-    width: 80%;
+    width: 81%;
     background-color:#fafafa;
-    margin-left: 5%;
 
 }
 .tabTitle{
@@ -836,4 +834,29 @@ div.tab button.active {
 .tabList{
 	font-size: 16px;
 	margin-top:2%;
+}
+/********************************PRODUCT ITEM CODE BELOW***************************************/
+.rightCol {
+	width:40%;
+	float:left;
+}
+ th {
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+    color:#ffffff;
+    background-color: #0067b2;
+    padding: 10px 20px 10px 20px;
+    font-size: 22px;
+
+}
+td {
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	text-align:center;
+	font-size: 16px;
+	padding: 10px 20px 10px 20px;
+}
+table {
+	border-spacing: 0px;
+	width:81%;
 }
