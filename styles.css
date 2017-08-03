@@ -1,0 +1,630 @@
+/* line 32, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+form,
+p,
+ul,
+ol,
+dl,
+dt,
+dd,
+li,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+td,
+tr,
+button,
+figure,
+input,
+fieldset {
+  margin: 0;
+  padding: 0; }
+
+/* line 43, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+header,
+footer,
+article,
+section,
+hgroup,
+nav,
+figure {
+  display: block; }
+
+/* line 47, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 52, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/* line 56, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+a {
+  color: #0667b2;
+  text-decoration: none; }
+
+/* line 61, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+img {
+  display: block;
+  height: auto;
+  width: 100%; }
+
+/* line 67, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.flex_grid {
+  display: flex; }
+
+/* line 71, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.col {
+  flex: 1;
+  flex-wrap: nowrap;
+  /*margin-left: 5%;*/ }
+
+/* line 77, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+body {
+  font-family: myriad-pro, Arial, sans-serif;
+  font-size: 62.5%;
+  color: #77787b;
+  background: url("/images/styles/bg_dots_1.svg") repeat-y top left 12px/208px; }
+
+/* line 84, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+p {
+  font-size: 1.6em;
+  margin-bottom: 20px; }
+
+/* line 90, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+h1,
+h2 {
+  font-family: eurostile, Arial, sans-serif; }
+
+/* line 94, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.row {
+  width: 100%;
+  padding: 0 5%; }
+
+/* line 99, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.cta_button {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: yellow;
+  padding: 15px 20px;
+  display: inline-block;
+  font-size: 1.8em; }
+
+/* line 110, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.home h2 {
+  color: #0667b2;
+  font-family: eurostile, Arial, sans-serif;
+  font-size: 4.2em;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 30px; }
+
+/* line 121, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+header .row.search_bar {
+  background-color: #dcddde;
+  padding: 8px 5%; }
+
+/* line 126, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+header .usa_flag {
+  flex: 0 1 200px; }
+  /* line 129, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  header .usa_flag img {
+    width: 46px;
+    float: left;
+    margin-right: 10px; }
+  /* line 135, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  header .usa_flag figcaption {
+    color: #0667b2;
+    font-size: 1.4em;
+    padding: 4px 0;
+    text-transform: uppercase; }
+
+/* line 142, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+header .secondary {
+  text-align: right; }
+  /* line 145, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  header .secondary ul {
+    list-style-type: none;
+    padding: 3px 0 0 0; }
+    /* line 149, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+    header .secondary ul li {
+      display: inline-block;
+      margin-right: 20px;
+      font-size: 1.6em; }
+
+/* line 156, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+header .search {
+  flex: 0 1 400px; }
+  /* line 160, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  header .search input[type=text] {
+    border: 1px solid #c4c4c4;
+    height: 26px;
+    margin: 0;
+    padding: 0 2%;
+    width: 75%; }
+  /* line 168, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  header .search input[type=submit] {
+    background-color: #0667b2;
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    height: 26px;
+    width: 24%; }
+
+/* line 179, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.row.logo_bar {
+  padding: 40px 5%;
+  background: #fff; }
+  /* line 183, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.logo_bar .col.logo {
+    flex: 0 1 343px; }
+  /* line 187, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.logo_bar nav.primary {
+    text-align: right;
+    font-family: eurostile, Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase; }
+    /* line 193, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+    .row.logo_bar nav.primary ul {
+      list-style-type: none;
+      padding: 36px 0 0 0; }
+      /* line 197, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+      .row.logo_bar nav.primary ul li {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 2em; }
+
+/* line 207, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.row.hero {
+  min-height: 631px;
+  padding: 0;
+  border-top: 8px solid #ffef00;
+  position: relative;
+  overflow: hidden; }
+  /* line 214, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .video_holder {
+    min-height: 551px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    background-size: cover;
+    background-image: none;
+    border-bottom: 85px solid rgba(171, 171, 171, 0.4); }
+    /* line 224, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+    .row.hero .video_holder .main {
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      /*width: 100%;*/
+      height: auto;
+      z-index: -100;
+      /*background-size: cover;*/
+      transition: 1s opacity;
+      top: -50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      -webkit-transform: translate(-50%, 0); }
+  /* line 240, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .color_overlay {
+    width: 84%;
+    /*background-color: rgba(0, 121, 193, 0.7);*/
+    background: -moz-linear-gradient(left, #0079c1 0%, rgba(0, 121, 193, 0.75) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #0079c1 0%, rgba(0, 121, 193, 0.75) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #0079c1 0%, rgba(0, 121, 193, 0.75) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#bf0079c1',GradientType=1 );
+    /* IE6-9 */
+    margin-left: 0px;
+    top: 0;
+    position: absolute;
+    min-height: 466px;
+    transform-origin: top left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg); }
+    /* line 256, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+    .row.hero .color_overlay:after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      top: 0;
+      left: 134px;
+      z-index: -1;
+      opacity: .4;
+      background: url("/images/styles/bg_dots_1.svg") repeat-y top left 12px/208px;
+      -webkit-transform: rotate(30deg);
+      -webkit-transform: skew(-30deg, 0deg);
+      transform: skew(30deg, 0deg);
+      min-height: 466px; }
+  /* line 273, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .text_box {
+    color: #fff;
+    padding-left: 5%;
+    width: 65%;
+    top: 50px;
+    position: absolute; }
+    /* line 280, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+    .row.hero .text_box h1 {
+      font-family: eurostile, Arial, sans-serif;
+      font-size: 5.5em;
+      font-weight: 300;
+      line-height: 1.2em;
+      margin-bottom: 30px; }
+  /* line 289, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .plax_circle {
+    position: absolute;
+    width: 562px;
+    top: 50px;
+    left: -6%; }
+  /* line 296, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .plax_plusline {
+    position: absolute;
+    width: 1300px;
+    bottom: 32px;
+    left: 232px;
+    opacity: .2; }
+  /* line 304, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .plax_plus_blue {
+    position: absolute;
+    width: 50px;
+    bottom: 10px;
+    left: 11%;
+    opacity: .3; }
+  /* line 312, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .plax_plus_green {
+    position: absolute;
+    width: 50px;
+    bottom: 10px;
+    left: 50%;
+    opacity: .3; }
+  /* line 320, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .plax_plus_red {
+    position: absolute;
+    width: 50px;
+    bottom: 10px;
+    left: 92%;
+    opacity: .3; }
+  /* line 328, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .plax_diag_draw_1 {
+    position: absolute;
+    top: 59px;
+    width: 579px;
+    left: -155px;
+    opacity: .2; }
+  /* line 336, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .plax_diag_draw_2 {
+    position: absolute;
+    top: 179px;
+    width: 500px;
+    left: 27%;
+    opacity: .15; }
+  /* line 344, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .plax_diag_draw_3 {
+    position: absolute;
+    top: 234px;
+    width: 454px;
+    left: 66%;
+    opacity: .15; }
+  /* line 352, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.hero .plax_diag_draw_4 {
+    position: absolute;
+    top: 196px;
+    width: 550px;
+    left: 34%;
+    opacity: .15; }
+
+/* line 362, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.product_selector h2 {
+  text-align: center; }
+
+/* line 366, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.product_selector .product_row {
+  padding: 0; }
+  /* line 369, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .product_selector .product_row .product_wrap {
+    width: 253px;
+    height: 350px;
+    border: 1px solid #f1f1f1;
+    border-left: none; }
+    /* line 374, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+    .product_selector .product_row .product_wrap h3.label {
+      font-family: myriad-pro, Arial, sans-serif;
+      padding: 15px;
+      /* height: 40px; */
+      /* display: block; */
+      background-color: rgba(238, 238, 238, 0.4);
+      color: #0667b2;
+      font-size: 19px;
+      font-weight: 600;
+      width: 100%;
+      z-index: 1;
+      bottom: 0;
+      position: absolute;
+      white-space: pre-wrap; }
+
+/* line 401, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.carousel {
+  display: block;
+  /*position: absolute;*/
+  -webkit-transform: translateZ(0);
+  /*  for demo only */
+  /*top:0; right:0; bottom:0; left:0;*/
+  width: 100%;
+  height: 350px;
+  min-width: 550px;
+  margin: auto;
+  font-size: 0;
+  /*background:$bgColor;*/
+  /*padding:$padding;*/
+  /*border-radius:6px;*/
+  /*box-shadow:0 4px 10px #000;*/
+  /********************/
+  /*height:$carouselHeight;*/
+  -webkit-overflow-scrolling: touch;
+  /* for tablets */
+  /*&:before, &:after{ 
+      content:'';
+      opacity:0; 
+      position:absolute; 
+      top:0;
+      bottom:0;
+      z-index:2;
+      width:50px;
+      font-size:80px;
+      line-height:$carouselHeight - 10;
+      font-family:arial;
+      color:#555;
+      font-weight:bold;
+      pointer-events:none;
+      transition:0.2s ease-out; 
+    }
+    &:before{ 
+      content:'\2039'; 
+      left:0; text-align:left;
+      text-indent:-20px;
+      box-shadow:50px 0 20px -20px $bodyBG inset; 
+    }
+    &:after{ 
+      content:'\203A'; 
+      right:0; text-align:right;
+      text-indent:40px;
+      box-shadow:-50px 0 20px -20px $bodyBG inset; 
+    }
+  
+    &.right:after, &.left:before{ 
+      opacity:1;
+    }
+  
+    &.right{
+        &:after{ right:0; text-indent:60px; }
+    }
+    &.left{
+        &:before{ left:0; text-indent:-40px; }
+    }*/
+  /*> a{ 
+      position:absolute; 
+      margin:0; top:0; bottom:0; 
+      color:#CCC; 
+      font-size:1.5em; 
+      transition:0.1s;
+        &:hover{ color:#FFF; }
+        &.prev{ left:-20px; }
+        &.next{ right:-20px; }
+    }*/
+  /*> .indicator{  
+      pointer-events:none;
+      position:absolute; 
+      z-index:4;
+      bottom:0; left:0;
+      background:$indicatorColor;
+      height:4px;
+      border-radius:10px;
+      opacity:0;
+      transition:opacity 0.2s, bottom 0.2s;
+    }
+  
+    &:hover{  
+      > .indicator{ opacity:1; bottom:-10px; }
+    }*/ }
+  /* line 421, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .touch .carousel {
+    overflow: auto; }
+  /* line 489, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .carousel > .wrap {
+    overflow: hidden;
+    /*border-radius:5px;*/ }
+    /* line 490, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+    .carousel > .wrap > ul {
+      list-style: none;
+      white-space: nowrap;
+      height: 350px;
+      text-align: center; }
+      /* line 495, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+      .carousel > .wrap > ul > li {
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        /*margin:0 0 0 5px;*/
+        position: relative;
+        overflow: hidden;
+        transition: 0.25s ease-out; }
+        /* line 503, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+        .carousel > .wrap > ul > li:first-child {
+          margin: 0; }
+        /* line 504, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+        .carousel > .wrap > ul > li > img {
+          display: block;
+          height: 100%;
+          margin: auto;
+          vertical-align: bottom;
+          position: relative;
+          z-index: 1;
+          transition: 1s ease; }
+
+/* line 527, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.row.inside_hero {
+  min-height: 250px;
+  padding: 0;
+  border-top: 8px solid #ffef00;
+  position: relative;
+  overflow: hidden; }
+  /* line 534, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.inside_hero .sub_nav_holder {
+    border-bottom: 85px solid rgba(171, 171, 171, 0.4);
+    position: relative;
+    z-index: 1; }
+    /* line 539, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+    .row.inside_hero .sub_nav_holder nav {
+      background-color: #0667b2;
+      padding: 16px 5% 16px 5%;
+      text-align: right; }
+      /* line 544, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+      .row.inside_hero .sub_nav_holder nav ul {
+        list-style-type: none;
+        font-size: 1.6em; }
+        /* line 548, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+        .row.inside_hero .sub_nav_holder nav ul li {
+          display: inline-block;
+          padding: 0px 17px;
+          border-left: 1px solid white; }
+          /* line 553, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+          .row.inside_hero .sub_nav_holder nav ul li:first-child {
+            border-left: none; }
+          /* line 557, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+          .row.inside_hero .sub_nav_holder nav ul li:last-child {
+            padding: 0px 0px 0px 17px; }
+          /* line 563, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+          .row.inside_hero .sub_nav_holder nav ul li a {
+            color: white; }
+  /* line 571, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.inside_hero .plax_circle {
+    position: absolute;
+    width: 562px;
+    bottom: 45px;
+    left: -6%; }
+  /* line 578, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.inside_hero .plax_plusline {
+    position: absolute;
+    width: 1300px;
+    bottom: 75px;
+    left: 232px;
+    opacity: .2; }
+  /* line 586, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.inside_hero .plax_plus_blue {
+    position: absolute;
+    width: 50px;
+    bottom: 56px;
+    left: 11%;
+    opacity: .3; }
+  /* line 594, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.inside_hero .plax_plus_green {
+    position: absolute;
+    width: 50px;
+    bottom: 56px;
+    left: 50%;
+    opacity: .3; }
+  /* line 602, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.inside_hero .plax_plus_red {
+    position: absolute;
+    width: 50px;
+    bottom: 56px;
+    left: 92%;
+    opacity: .3; }
+  /* line 610, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.inside_hero .plax_diag_draw_1 {
+    position: absolute;
+    bottom: 59px;
+    width: 579px;
+    right: 24%;
+    opacity: .2; }
+  /* line 618, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .row.inside_hero .plax_diag_draw_3 {
+    position: absolute;
+    bottom: 22px;
+    width: 454px;
+    right: 4%;
+    opacity: .15; }
+
+/* line 629, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.main_wrap {
+  padding: 0px 5% 0px 0px;
+  overflow: visible;
+  display: flex; }
+
+/* line 635, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.sidebar_wrap {
+  height: 100%;
+  float: left;
+  padding: 20px 3% 30px 5%;
+  flex: 1;
+  background-color: white; }
+
+/* line 643, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+.main_content_wrap {
+  /*width: 78%;
+	float: right;*/
+  margin-top: -43px;
+  flex: 5; }
+  /* line 649, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .main_content_wrap .opening {
+    position: relative;
+    overflow: auto; }
+  /* line 654, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .main_content_wrap h1.main_headline {
+    font-size: 4.5em;
+    font-weight: 400;
+    line-height: 1em;
+    color: #0667b2;
+    margin-bottom: 60px; }
+  /* line 662, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .main_content_wrap .breadcrumb {
+    font-size: 1.6em;
+    color: #0667b2;
+    margin-bottom: 10px; }
+  /* line 668, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  .main_content_wrap .product_intro_img {
+    width: 45%;
+    float: right;
+    margin-left: 30px; }
+
+/* line 678, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+footer {
+  border-top: 1px solid #dcddde;
+  border-bottom: 60px solid #dcddde;
+  margin: 100px 0px 0px 0px;
+  padding: 100px 0; }
+  /* line 684, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  footer .col {
+    margin-left: 5%; }
+  /* line 688, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  footer .col.contact {
+    padding-top: 80px; }
+  /* line 692, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  footer .company_name {
+    font-family: eurostile, Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500; }
+  /* line 698, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  footer .main {
+    padding-bottom: 40px; }
+  /* line 703, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  footer article h1 {
+    font-family: myriad-pro, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 30px; }
+  /* line 715, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  footer .events article h1 {
+    margin-bottom: 5px; }
+  /* line 718, /Volumes/Macintosh HD/Users/mlohrman/Sites/5BYFIVE-ControlDevices/styles.scss */
+  footer .events article time {
+    display: block;
+    font-size: 1.6em;
+    margin-bottom: 30px; }

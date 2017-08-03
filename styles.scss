@@ -1,3 +1,5 @@
+
+
 $gray: #dcddde;
 $yellow: #ffef00;
 $lightblue: #0079c1;
@@ -644,6 +646,11 @@ $bgColor        : lighten($bodyBG, 16);
 	margin-top: -43px;
 	flex: 5;
 	
+	.opening {
+		position: relative;
+		overflow: auto;
+	}
+	
 	h1.main_headline {
 		font-size: 4.5em;
 		font-weight: 400;
@@ -656,6 +663,12 @@ $bgColor        : lighten($bodyBG, 16);
 		font-size: 1.6em;
 		color: $darkblue;
 		margin-bottom: 10px;
+	}
+	
+	.product_intro_img {
+		width: 45%;
+	    float: right;
+	    margin-left: 30px;;
 	}	
 }
 
