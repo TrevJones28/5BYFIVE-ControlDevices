@@ -236,7 +236,7 @@ header {
 			-webkit-transform: translate(-50%,0);
 		}
 	}
-	
+
 	.color_overlay {
 		width: 84%;
 		/*background-color: rgba(0, 121, 193, 0.7);*/
@@ -389,7 +389,21 @@ header {
 		}
 	}
 }
-
+.itemName {
+				font-family: $font_body;
+				padding: 15px;
+			    /* height: 40px; */
+			    /* display: block; */
+			    background-color: rgba(238, 238, 238, 0.4);
+			    color: #0667b2;
+			    font-size: 19px;
+			    font-weight: 600;
+			    width: 100%;
+			    z-index: 1;
+			    bottom: 0;
+			    position: absolute; 
+			    white-space: pre-wrap;
+			}
 
 $carouselHeight : 350px;
 $padding        : 8px;
