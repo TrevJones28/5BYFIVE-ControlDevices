@@ -330,8 +330,7 @@ header .search {
 .grid {
   overflow: hidden;
   /*border-radius:5px;*/
-  margin-right: 35%;
-  width: 90%;
+  width: 80%;
   border-left: 1px solid #f1f1f1;
   border-right: 1px solid #f1f1f1; }
   .grid ul {
@@ -373,7 +372,7 @@ header .search {
       padding: 15px;
       background-color: rgba(238, 238, 238, 0.4);
       color: #0667b2;
-      font-size: 1.5em;
+      font-size: 1.6em;
       font-weight: 600;
       width: 100%;
       z-index: 1;
@@ -581,6 +580,42 @@ header .search {
   -ms-flex: 1;
   flex: 1;
   background-color: white; }
+  .sidebar_wrap p.sidebar_wrap {
+    font-weight: 600; }
+
+.sidebar-h3 {
+  color: #0667b2;
+  font-size: 2em;
+  margin-bottom: 10px; }
+
+.sidebarTitle {
+  padding-top: 10px;
+  font-weight: 600; }
+
+.sidebarSearch {
+  padding: 2px 50% 2px 10px;
+  border: 1px solid #ddd;
+  display: inline;
+  border-radius: 5px 0px 0px 5px; }
+
+#RMC-padding {
+  padding: 2px 45% 2px 10px;
+  border: 1px solid #ddd;
+  display: inline;
+  border-radius: 5px 0px 0px 5px; }
+
+.blueBtn {
+  display: inline;
+  padding: 9px 20px 4px 4px;
+  border-radius: 0px 5px 5px 0px;
+  background: #3295ff; }
+
+.activeSideBar {
+  color: #0095d4;
+  text-decoration: underline; }
+
+#break {
+  padding-bottom: 12px; }
 
 .main_content_wrap {
   /*width: 78%;
@@ -642,7 +677,7 @@ div#topTab {
 div.tab {
   overflow: hidden;
   border: 1px solid #ffffff;
-  width: 81%;
+  width: 80%;
   height: 10%; }
 
 /* Styling the buttons*/
@@ -681,7 +716,7 @@ div.tab button.active {
   padding: 4%;
   border: 1px solid #ccc;
   border-top: none;
-  width: 81%;
+  width: 80%;
   background-color: #fafafa; }
 
 .tabTitle {
