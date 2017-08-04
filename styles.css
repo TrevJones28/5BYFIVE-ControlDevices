@@ -589,7 +589,7 @@ header .search {
   margin-bottom: 10px; }
 
 .sidebarTitle {
-  padding-top: 10px;
+  padding-top: 20px;
   font-weight: 600; }
 
 .sidebarSearch {
@@ -599,7 +599,7 @@ header .search {
   border-radius: 5px 0px 0px 5px; }
 
 #RMC-padding {
-  padding: 2px 45% 2px 10px;
+  padding: 2px 48% 2px 10px;
   border: 1px solid #ddd;
   display: inline;
   border-radius: 5px 0px 0px 5px; }
