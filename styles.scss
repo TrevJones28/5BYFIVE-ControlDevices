@@ -565,7 +565,12 @@ $bgColor        : lighten($bodyBG, 16);
        }
     }
 }
-
+.home-grid {
+	display:none;
+	.home-grid-item {
+		display:none;
+	}
+}
 
 // ===================================================
 
@@ -710,12 +715,14 @@ $bgColor        : lighten($bodyBG, 16);
 	border: 1px solid #ddd;
 	display: inline;
 	border-radius: 5px 0px 0px 5px;
+	background-color:#ffffff;
 }
 #RMC-padding {
 	padding: 2px 48% 2px 10px;
 	border: 1px solid #ddd;
 	display: inline;
 	border-radius: 5px 0px 0px 5px;
+	background-color:#ffffff;
 
 }
 .blueBtn {
@@ -729,6 +736,12 @@ $bgColor        : lighten($bodyBG, 16);
 .activeSideBar{
 	color:#0095d4;
 	text-decoration: underline;
+}
+.mobileSideBar{
+	display:none;
+}
+.mobile-filter{
+	display:none;
 }
 #break{
 	padding-bottom:12px;
@@ -816,7 +829,10 @@ footer {
 		}
 	}
 }
-
+.color-bg {
+	
+	display:none;
+}
 /***********************TAB CONTENT IS HERE**********************************/
 div#topTab{
 	background-color: #dadada;
@@ -897,8 +913,359 @@ td {
 	text-align:center;
 	font-size: 16px;
 	padding: 10px 20px 10px 20px;
+	background-color:#fff;
 }
 table {
 	border-spacing: 0px;
 	width:81%;
 }
+/****************************************MEDIA QUERIES FOR MOBILE DEVICES BELOW*********************************************************************/
+@media only screen and (max-width: 1385px){
+	.sidebarSearch{
+		padding: 2px 20% 2px 10px;
+
+	}
+	#RMC-padding {
+	padding: 2px 18% 2px 10px;
+
+	
+
+}
+
+.rightCol {
+	width:40%;
+	float:left;
+	margin-left: 10%;
+}
+.spec-h2{
+	margin-left:10%;
+}
+table{
+	margin-left:10%;
+}
+ 
+}
+@media only screen and (max-width: 1070px){
+	/* For mobile phones: */
+	/*****HOME MEDIA QUERY CONTENT**********************************************************************************/
+
+.video_holder {
+	display: none;
+}
+.color_overlay {
+		display: none;
+	   
+	    
+	 
+	    
+	}
+.color-wrapper {
+	width: 100%;
+		/*background-color: rgba(0, 121, 193, 0.7);*/
+		background: -moz-linear-gradient(left, rgba(0,121,193,1) 0%, rgba(0,121,193,0.75) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, rgba(0,121,193,1) 0%,rgba(0,121,193,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, rgba(0,121,193,1) 0%,rgba(0,121,193,0.75) 100%)/*, url("/images/styles/bg_dots.svg") repeat-y top left 12px / 208px*/; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#bf0079c1',GradientType=1 ); /* IE6-9 */
+		margin-left: 0px;
+	    top: 0;
+	    position: absolute;
+	    min-height: 466px;
+	    transform-origin: top left;
+	 
+	    
+	    &:after {
+			content: "";
+		    position: absolute;
+		    width: 220px;
+		    top: 0;
+		    left: 134px;
+		    z-index: -1;
+		    opacity: .4;
+		    background: url("/images/styles/bg_dots_1.svg") repeat-y top left 12px/208px;
+		    -webkit-transform: rotate(30deg);
+		    -webkit-transform: skew(-30deg, 0deg);
+		    transform: skew(30deg, 0deg);
+		    min-height: 466px;
+	    }
+
+}
+.text_box{
+	h1 {
+			font-family: $font_heading;
+			font-size: 4.5em !important;
+			font-weight: 300;
+			line-height: 1.2em;
+			margin-bottom: 30px;
+		}
+}
+.home-slider {
+	display:none;
+}
+
+
+.home-grid {
+	display: inline-block;
+	overflow:hidden; /*border-radius:5px;*/
+	width:80%;
+	padding-left:15%;
+
+
+       ul{ 
+        list-style:none; 
+        white-space:nowrap; 
+        height: 10%;
+        text-align: center;}
+           li{ 
+            display:block; 
+            vertical-align:middle; 
+            height:100%; 
+            /*margin:0 0 0 5px;*/ 
+            position:relative; 
+            overflow:hidden; 
+            transition:0.25s ease-out;}
+            &:first-child{ margin:0; }
+             img{ 
+               display:block; 
+               height:100%; 
+               margin:auto; 
+               vertical-align:bottom; 
+               position:relative; 
+               z-index:1; 
+               transition:1s ease; }
+
+
+            .grid-descriptor{
+            	background-color: rgba(0, 121, 193, 0.7); 
+            	background-size: cover;
+
+            }   
+
+            .category-descriptor{
+            	color: #fff;
+
+
+            }
+
+	.home-grid-item{
+		display: inline-block;
+		width:50%;
+		height: 30%;
+		border: 1px solid #f1f1f1; 
+		float:left;
+		
+			img{
+				width:100%;
+		}
+			h3{
+				font-family: $font_body;
+				padding: 15px;
+			    background-color: rgba(238, 238, 238, 1.0);
+			    color: #0667b2;
+			    font-size: 1.6em;
+			    font-weight: 600;
+			    width: 100%;
+			    z-index: 1;
+			    text-align:center;
+
+			}
+	}
+}
+
+	/***LIST PAGE CSS********************************************************************************/
+
+nav.primary {
+		text-align: right;
+		font-family: $font_heading;
+		font-weight: 500;
+		text-transform: uppercase;
+
+		
+		ul {
+			list-style-type: none;
+			padding: 36px 0 0 0;
+			
+			li {
+				display: inline-block;
+				margin-left: 20px;
+				font-size: 2em;
+			}
+		}
+		
+	}
+
+.sub_nav_holder {
+		border-bottom: 85px solid rgba(171,171,171, .4);
+		position: relative;
+		z-index: 1;
+		
+		nav {
+			background-color: $darkblue;
+		
+			
+
+			
+			ul {
+				list-style-type: none;
+				font-size: 1.6em;
+				width:80%;
+				
+				li {
+					display: block;
+					
+					border-left: 1px solid white;
+					text-align: center;
+					
+					&:first-child
+						{ 
+							border-left: none;
+						}
+					&:last-child
+						{ 
+							
+						}
+
+					
+					a {
+						color: white;
+					}
+				}
+			}
+		} 
+	}
+    /*****MOBILE SIDE BAR***********************************************************************/
+    .sidebar_wrap{
+    	display:none;
+    }
+#RMC-padding {
+	padding: 2px 20% 2px 10px;
+	
+
+}
+    hr{
+    	display:none;
+    }
+    .mobileSideBar{
+		display:block;
+		width:100%;
+		height:100%;
+		padding: 20px 3% 30px 5%;
+		flex: 1;
+		background-color: white;
+		text-align:center;
+	
+
+	p.sidebar_wrap{
+		font-weight: 600;
+	}
+}
+.mobile-filter{
+	width:100%;
+	display:block;
+	padding:2% 0% 2% 15%;
+}
+.breadcrumb{padding-left:15%;}
+.main_headline{padding-left:15%;}
+.grid {
+	overflow:hidden; /*border-radius:5px;*/
+	width:80%;
+	padding-left:15%;
+
+
+       ul{ 
+        list-style:none; 
+        white-space:nowrap; 
+        height: 10%;
+        text-align: center;}
+           li{ 
+            display:block; 
+            vertical-align:middle; 
+            height:100%; 
+            /*margin:0 0 0 5px;*/ 
+            position:relative; 
+            overflow:hidden; 
+            transition:0.25s ease-out;}
+            &:first-child{ margin:0; }
+             img{ 
+               display:block; 
+               height:100%; 
+               margin:auto; 
+               vertical-align:bottom; 
+               position:relative; 
+               z-index:1; 
+               transition:1s ease; }
+	.grid-item{
+		width:50%;
+		height: 30%;
+		border: 1px solid #f1f1f1; 
+		float:left;
+		
+			img{
+				width:100%;
+		}
+			h3{
+				font-family: $font_body;
+				padding: 15px;
+			    background-color: rgba(238, 238, 238, 0.4);
+			    color: #0667b2;
+			    font-size: 1.6em;
+			    font-weight: 600;
+			    width: 100%;
+			    z-index: 1;
+			    text-align:center;
+
+			}
+	}
+}
+	/************************TAB MQ***************************************************************/
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    width:100%;
+    height:10%;
+    margin-left: 1%;
+}
+
+/* Styling the buttons*/
+div.tab button {
+    text-align:center;
+    float: left;
+    border: 1px solid #ffffff;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 10px 20px 10px;
+    transition: 0.3s;
+    font-size: 1.4em;
+    width: 25%;
+    height: 100%;
+}
+
+
+/* tab content styling */
+.tabcontent {
+    display: none;
+    padding: 4%;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 100%;
+    background-color:#fafafa;
+
+}
+.tabTitle{
+	color: #0067b2;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.tabList{
+	font-size: 16px;
+	margin-top:2%;
+}
+
+footer {
+	width:100%;
+}
+
+
+
+
+/****END MEDIA TAB HERE****/}
