@@ -494,6 +494,11 @@ header .search {
           -o-transition: 1s ease;
           transition: 1s ease; }
 
+.home-grid {
+  display: none; }
+  .home-grid .home-grid-item {
+    display: none; }
+
 .row.inside_hero {
   min-height: 250px;
   padding: 0;
@@ -782,7 +787,7 @@ table {
 
 @media only screen and (max-width: 1070px) {
   /* For mobile phones: */
-  /*****HOME CSS**********************************************************************************/
+  /*****HOME MEDIA QUERY CONTENT**********************************************************************************/
   .video_holder {
     display: none; }
   .color_overlay {
@@ -827,6 +832,64 @@ table {
     font-weight: 300;
     line-height: 1.2em;
     margin-bottom: 30px; }
+  .home-slider {
+    display: none; }
+  .home-grid {
+    display: inline-block;
+    overflow: hidden;
+    /*border-radius:5px;*/
+    width: 80%;
+    padding-left: 15%; }
+    .home-grid ul {
+      list-style: none;
+      white-space: nowrap;
+      height: 10%;
+      text-align: center; }
+    .home-grid li {
+      display: block;
+      vertical-align: middle;
+      height: 100%;
+      /*margin:0 0 0 5px;*/
+      position: relative;
+      overflow: hidden;
+      -webkit-transition: 0.25s ease-out;
+      -o-transition: 0.25s ease-out;
+      transition: 0.25s ease-out; }
+    .home-grid:first-child {
+      margin: 0; }
+    .home-grid img {
+      display: block;
+      height: 100%;
+      margin: auto;
+      vertical-align: bottom;
+      position: relative;
+      z-index: 1;
+      -webkit-transition: 1s ease;
+      -o-transition: 1s ease;
+      transition: 1s ease; }
+    .home-grid .grid-descriptor {
+      background-color: rgba(0, 121, 193, 0.7);
+      background-size: cover; }
+    .home-grid .category-descriptor {
+      color: #fff; }
+    .home-grid .home-grid-item {
+      display: inline-block;
+      width: 50%;
+      height: 30%;
+      border: 1px solid #f1f1f1;
+      float: left; }
+      .home-grid .home-grid-item img {
+        width: 100%; }
+      .home-grid .home-grid-item h3 {
+        font-family: myriad-pro, Arial, sans-serif;
+        padding: 15px;
+        background-color: #eeeeee;
+        color: #0667b2;
+        font-size: 1.6em;
+        font-weight: 600;
+        width: 100%;
+        z-index: 1;
+        text-align: center; }
   /***LIST PAGE CSS********************************************************************************/
   nav.primary {
     text-align: right;

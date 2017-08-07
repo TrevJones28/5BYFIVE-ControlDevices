@@ -57,6 +57,8 @@
 
         $el[prevMore ? "addClass" : "removeClass"]('left');
         $el[nextMore ? "addClass" : "removeClass"]('right');
+
+    
     }
 
     $.fn.carousel = function(options){
@@ -67,6 +69,14 @@
 
     // automatic binding to all elements which have the class that is assigned to "bindToClass"
     $.fn.carousel();
+
+     //deactivate on mobile devices
+    $(document).ready(function() { 
+        if($(window).width() > 800 ) {
+            $("#home-slider").removeClass("carousel");
+
+        }
+    });
 
 })(jQuery);
 

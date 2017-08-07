@@ -565,7 +565,12 @@ $bgColor        : lighten($bodyBG, 16);
        }
     }
 }
-
+.home-grid {
+	display:none;
+	.home-grid-item {
+		display:none;
+	}
+}
 
 // ===================================================
 
@@ -942,7 +947,7 @@ table{
 }
 @media only screen and (max-width: 1070px){
 	/* For mobile phones: */
-	/*****HOME CSS**********************************************************************************/
+	/*****HOME MEDIA QUERY CONTENT**********************************************************************************/
 
 .video_holder {
 	display: none;
@@ -992,6 +997,78 @@ table{
 			line-height: 1.2em;
 			margin-bottom: 30px;
 		}
+}
+.home-slider {
+	display:none;
+}
+
+
+.home-grid {
+	display: inline-block;
+	overflow:hidden; /*border-radius:5px;*/
+	width:80%;
+	padding-left:15%;
+
+
+       ul{ 
+        list-style:none; 
+        white-space:nowrap; 
+        height: 10%;
+        text-align: center;}
+           li{ 
+            display:block; 
+            vertical-align:middle; 
+            height:100%; 
+            /*margin:0 0 0 5px;*/ 
+            position:relative; 
+            overflow:hidden; 
+            transition:0.25s ease-out;}
+            &:first-child{ margin:0; }
+             img{ 
+               display:block; 
+               height:100%; 
+               margin:auto; 
+               vertical-align:bottom; 
+               position:relative; 
+               z-index:1; 
+               transition:1s ease; }
+
+
+            .grid-descriptor{
+            	background-color: rgba(0, 121, 193, 0.7); 
+            	background-size: cover;
+
+            }   
+
+            .category-descriptor{
+            	color: #fff;
+
+
+            }
+
+	.home-grid-item{
+		display: inline-block;
+		width:50%;
+		height: 30%;
+		border: 1px solid #f1f1f1; 
+		float:left;
+		
+			img{
+				width:100%;
+		}
+			h3{
+				font-family: $font_body;
+				padding: 15px;
+			    background-color: rgba(238, 238, 238, 1.0);
+			    color: #0667b2;
+			    font-size: 1.6em;
+			    font-weight: 600;
+			    width: 100%;
+			    z-index: 1;
+			    text-align:center;
+
+			}
+	}
 }
 
 	/***LIST PAGE CSS********************************************************************************/
