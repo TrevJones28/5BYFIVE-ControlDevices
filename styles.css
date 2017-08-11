@@ -32,10 +32,12 @@ figure {
   display: block; }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 a {
@@ -48,10 +50,18 @@ img {
   width: 100%; }
 
 .flex_grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
 
 .col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   /*margin-left: 5%;*/ }
 
@@ -95,6 +105,9 @@ header .row.search_bar {
   padding: 8px 5%; }
 
 header .usa_flag {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
   flex: 0 1 200px; }
   header .usa_flag img {
     width: 46px;
@@ -117,6 +130,9 @@ header .secondary {
       font-size: 1.6em; }
 
 header .search {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 400px;
+  -ms-flex: 0 1 400px;
   flex: 0 1 400px; }
   header .search input[type=text] {
     border: 1px solid #c4c4c4;
@@ -136,6 +152,9 @@ header .search {
   padding: 40px 5%;
   background: #fff; }
   .row.logo_bar .col.logo {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 343px;
+    -ms-flex: 0 1 343px;
     flex: 0 1 343px; }
   .row.logo_bar nav.primary {
     text-align: right;
@@ -172,9 +191,12 @@ header .search {
       height: auto;
       z-index: -100;
       /*background-size: cover;*/
+      -webkit-transition: 1s opacity;
+      -o-transition: 1s opacity;
       transition: 1s opacity;
       top: -50%;
       left: 50%;
+      -ms-transform: translate(-50%, 0);
       transform: translate(-50%, 0);
       -webkit-transform: translate(-50%, 0); }
   .row.hero .color_overlay {
@@ -184,6 +206,8 @@ header .search {
     /* FF3.6-15 */
     background: -webkit-linear-gradient(left, #0079c1 0%, rgba(0, 121, 193, 0.75) 100%);
     /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#0079c1), to(rgba(0, 121, 193, 0.75)));
+    background: -o-linear-gradient(left, #0079c1 0%, rgba(0, 121, 193, 0.75) 100%);
     background: linear-gradient(to right, #0079c1 0%, rgba(0, 121, 193, 0.75) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#bf0079c1',GradientType=1 );
@@ -192,6 +216,8 @@ header .search {
     top: 0;
     position: absolute;
     min-height: 466px;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
     transform-origin: top left;
     -ms-transform: skew(-30deg, 0deg);
     -webkit-transform: skew(-30deg, 0deg);
@@ -207,6 +233,7 @@ header .search {
       background: url("/images/styles/bg_dots_1.svg") repeat-y top left 12px/208px;
       -webkit-transform: rotate(30deg);
       -webkit-transform: skew(-30deg, 0deg);
+      -ms-transform: skew(30deg, 0deg);
       transform: skew(30deg, 0deg);
       min-height: 466px; }
   .row.hero .text_box {
@@ -318,6 +345,8 @@ header .search {
     /*margin:0 0 0 5px;*/
     position: relative;
     overflow: hidden;
+    -webkit-transition: 0.25s ease-out;
+    -o-transition: 0.25s ease-out;
     transition: 0.25s ease-out; }
   .grid:first-child {
     margin: 0; }
@@ -328,6 +357,8 @@ header .search {
     vertical-align: bottom;
     position: relative;
     z-index: 1;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
     transition: 1s ease; }
   .grid .grid-item {
     width: 25%;
@@ -447,6 +478,8 @@ header .search {
         /*margin:0 0 0 5px;*/
         position: relative;
         overflow: hidden;
+        -webkit-transition: 0.25s ease-out;
+        -o-transition: 0.25s ease-out;
         transition: 0.25s ease-out; }
         .carousel > .wrap > ul > li:first-child {
           margin: 0; }
@@ -457,6 +490,8 @@ header .search {
           vertical-align: bottom;
           position: relative;
           z-index: 1;
+          -webkit-transition: 1s ease;
+          -o-transition: 1s ease;
           transition: 1s ease; }
 
 .home-grid {
@@ -536,12 +571,18 @@ header .search {
 .main_wrap {
   padding: 0px 5% 0px 0px;
   overflow: visible;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
 
 .sidebar_wrap {
   height: 100%;
   float: left;
   padding: 20px 3% 30px 5%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   background-color: white; }
   .sidebar_wrap p.sidebar_wrap {
@@ -611,14 +652,23 @@ header .search {
   /*width: 78%;
 	float: right;*/
   margin-top: -43px;
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+  -ms-flex: 5;
   flex: 5; }
   .main_content_wrap .opening {
     position: relative;
     overflow: auto; }
     .main_content_wrap .opening .row {
       padding: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex; }
       .main_content_wrap .opening .row .col_half {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
         flex: 1;
         padding-right: 30px; }
         .main_content_wrap .opening .row .col_half:last-child {
@@ -689,6 +739,8 @@ div.tab button {
   outline: none;
   cursor: pointer;
   padding: 20px 10px 20px 10px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   font-size: 1.6em;
   width: 25%;
@@ -785,6 +837,8 @@ table {
     /* FF3.6-15 */
     background: -webkit-linear-gradient(left, #0079c1 0%, rgba(0, 121, 193, 0.75) 100%);
     /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#0079c1), to(rgba(0, 121, 193, 0.75)));
+    background: -o-linear-gradient(left, #0079c1 0%, rgba(0, 121, 193, 0.75) 100%);
     background: linear-gradient(to right, #0079c1 0%, rgba(0, 121, 193, 0.75) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0079c1', endColorstr='#bf0079c1',GradientType=1 );
@@ -793,6 +847,8 @@ table {
     top: 0;
     position: absolute;
     min-height: 466px;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
     transform-origin: top left; }
     .color-wrapper:after {
       content: "";
@@ -805,22 +861,29 @@ table {
       background: url("/images/styles/bg_dots_1.svg") repeat-y top left 12px/208px;
       -webkit-transform: rotate(30deg);
       -webkit-transform: skew(-30deg, 0deg);
+      -ms-transform: skew(30deg, 0deg);
       transform: skew(30deg, 0deg);
       min-height: 466px; }
-  .text_box h1 {
-    font-family: eurostile, Arial, sans-serif;
-    font-size: 4.5em !important;
-    font-weight: 300;
-    line-height: 1.2em;
-    margin-bottom: 30px; }
+  .row.hero .text_box {
+    padding-left: 5%;
+    padding-right: 2%;
+    position: absolute;
+    width: 100%; }
+    .row.hero .text_box h1 {
+      font-family: eurostile, Arial, sans-serif;
+      font-size: 3.5em !important;
+      font-weight: 300;
+      line-height: 1.2em;
+      margin-bottom: 30px; }
   .home-slider {
     display: none; }
   .home-grid {
     display: inline-block;
     overflow: hidden;
     /*border-radius:5px;*/
-    width: 80%;
-    padding-left: 15%; }
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%; }
     .home-grid ul {
       list-style: none;
       white-space: nowrap;
@@ -833,6 +896,8 @@ table {
       /*margin:0 0 0 5px;*/
       position: relative;
       overflow: hidden;
+      -webkit-transition: 0.25s ease-out;
+      -o-transition: 0.25s ease-out;
       transition: 0.25s ease-out; }
     .home-grid:first-child {
       margin: 0; }
@@ -843,6 +908,8 @@ table {
       vertical-align: bottom;
       position: relative;
       z-index: 1;
+      -webkit-transition: 1s ease;
+      -o-transition: 1s ease;
       transition: 1s ease; }
     .home-grid .grid-descriptor {
       background-color: rgba(0, 121, 193, 0.7);
@@ -910,6 +977,9 @@ table {
     width: 100%;
     height: 100%;
     padding: 20px 3% 30px 5%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     background-color: white;
     text-align: center; }
@@ -940,6 +1010,8 @@ table {
       /*margin:0 0 0 5px;*/
       position: relative;
       overflow: hidden;
+      -webkit-transition: 0.25s ease-out;
+      -o-transition: 0.25s ease-out;
       transition: 0.25s ease-out; }
     .grid:first-child {
       margin: 0; }
@@ -950,6 +1022,8 @@ table {
       vertical-align: bottom;
       position: relative;
       z-index: 1;
+      -webkit-transition: 1s ease;
+      -o-transition: 1s ease;
       transition: 1s ease; }
     .grid .grid-item {
       width: 50%;
@@ -983,6 +1057,8 @@ table {
     outline: none;
     cursor: pointer;
     padding: 20px 10px 20px 10px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     font-size: 1.4em;
     width: 25%;
@@ -1020,4 +1096,7 @@ table {
       font-size: 3.5em !important;
       font-weight: 300;
       line-height: 1.2em;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  .cta_button {
+    position: absolute;
+    left: 15%; } }
