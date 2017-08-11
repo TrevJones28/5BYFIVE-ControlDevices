@@ -112,24 +112,41 @@
 	<div class="main_wrap">
 	
 		<div class="sidebar_wrap">
-			<h3 class="sidebar-h3">Filter Products By <br>Attribute</h3>
-			<p class="sidebarTitle">Inlet Size</p>
-			<p class="sidebarSearch">1/8"</p><div class="blueBtn"></div>
-			<p class="sidebarTitle">Outlet Size</p>
-			<p class="sidebarSearch">1/8"</p><div class="blueBtn"></div>
-			<p class="sidebarTitle">Manufacturer</p>
-			<p id="RMC-padding">RMC</p><div class="blueBtn"></div>
-			<div id="break"></div>
-			<hr>
-			<a href=""><p class="activeSideBar"><strong>Brass Float Valves</strong></p></a>
-			<a href=""><p><strong>Stainless Steel Float Valves</strong></p></a>
-			<a href=""><p><strong>PVC Float Valves</strong></p></a>
-			<a href=""><p><strong>Miniature Float Valves</strong></p></a>
-			<a href=""><p><strong>Floats</strong></p></a>
-			<a href=""><p><strong>Ice Kit Reservoirs</strong></p></a>
-			<a href=""><p><strong>Misc Water Control Valves</strong></p></a>
-			<a href=""><p><strong>Replace Parts/Accessories</strong></p></a>
-		</div>
+			
+			<section class="product_filter">
+				<h3 class="sidebar-h3">Filter Products By <br>Attribute</h3>
+				<label class="sidebarTitle">Inlet Size</label>
+				<select name="inlet_size">
+				  	<option value="">1/8"</option>
+				  	<option value="male">1/4"</option>
+				  	<option value="female">1/2"</option>
+				</select>
+				<label class="sidebarTitle">Outlet Size</label>
+				<select name="oulet_size">
+				  	<option value="">1/8"</option>
+				  	<option value="male">1/4"</option>
+				  	<option value="female">1/2"</option>
+				</select>
+				<label class="sidebarTitle">Manufacturer</label>
+				<select name="manufacturer">
+				  	<option value="">RMC</option>
+				</select>
+			</section>
+			
+			<nav class="sidebar_nav">
+				<ul>
+					<li><a href="" class="activeSideBar">Brass Float Valves</a></li>
+					<li><a href="">Stainless Steel Float Valves</a></li>
+					<li><a href="">PVC Float Valves</a></li>
+					<li><a href="">Miniature Float Valves</a></li>
+					<li><a href="">Floats</a></li>
+					<li><a href="">Ice Kit Reservoirs</a></li>
+					<li><a href="">Misc Water Control Valves</a></li>
+					<li><a href="">Replace Parts/Accessories</a></li>
+				</ul>
+			</nav>
+			
+		</div><!-- end sidebar_wrap -->
 		
 		<div class="main_content_wrap">
 			
@@ -137,19 +154,29 @@
 				
 				<nav>
 					<p class="breadcrumb">
-						<strong>Float Valves <span class="divider">/</strong></span>
+						Float Valves <span class="divider">/</span>
 					</p>
 				</nav>
 				
 				<h1 class="main_headline">Brass Float Valves</h1>
 			<div class="mobile-filter">
 			<h3 class="sidebar-h3">Filter Products By <br>Attribute</h3>
-			<p class="sidebarTitle">Inlet Size</p>
-			<p class="sidebarSearch">1/8"</p><div class="blueBtn"></div>
-			<p class="sidebarTitle">Outlet Size</p>
-			<p class="sidebarSearch">1/8"</p><div class="blueBtn"></div>
-			<p class="sidebarTitle">Manufacturer</p>
-			<p id="RMC-padding">RMC</p><div class="blueBtn"></div>
+			<label class="sidebarTitle">Inlet Size</label>
+			<select name="inlet_size">
+			  	<option value="">1/8"</option>
+			  	<option value="male">1/4"</option>
+			  	<option value="female">1/2"</option>
+			</select>
+			<label class="sidebarTitle">Outlet Size</label>
+			<select name="oulet_size">
+			  	<option value="">1/8"</option>
+			  	<option value="male">1/4"</option>
+			  	<option value="female">1/2"</option>
+			</select>
+			<label class="sidebarTitle">Manufacturer</label>
+			<select name="manufacturer">
+			  	<option value="">RMC</option>
+			</select>
 			<div id="break"></div>
 			<hr>
 		</div>
@@ -161,8 +188,10 @@
 			<div class="grid">
 				<ul>
 				<li class="grid-item">
+					<a href="product_item_1.html">
 					<img class="item" src="/images/styles/home_product_temp_pneumaticvalves_00.jpg" />
 					<h3 class="label">R400 Series BOB Float Valves</h3>
+					</a>
 				</li>
 				<li class="grid-item">
 					<img src="/images/styles/home_product_temp_floatvalves_00.jpg" />
