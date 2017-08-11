@@ -785,7 +785,7 @@ table {
   table {
     margin-left: 10%; } }
 
-@media only screen and (max-width: 1070px) {
+@media only screen and (max-width: 1172px) {
   /* For mobile phones: */
   /*****HOME MEDIA QUERY CONTENT**********************************************************************************/
   .video_holder {
@@ -1038,3 +1038,18 @@ table {
   footer {
     width: 100%; }
   /****END MEDIA TAB HERE****/ }
+
+@media only screen and (max-width: 870px) {
+  /*******SUPER SMALL MOBILE SCREENS*********/
+  .text_box {
+    color: #fff;
+    padding-left: 5%;
+    width: 25%;
+    top: 50px;
+    position: absolute; }
+    .text_box h1 {
+      font-family: eurostile, Arial, sans-serif;
+      font-size: 3.5em !important;
+      font-weight: 300;
+      line-height: 1.2em;
+      margin-bottom: 20px; } }

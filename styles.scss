@@ -945,7 +945,7 @@ table{
 }
  
 }
-@media only screen and (max-width: 1070px){
+@media only screen and (max-width: 1172px){
 	/* For mobile phones: */
 	/*****HOME MEDIA QUERY CONTENT**********************************************************************************/
 
@@ -1269,3 +1269,22 @@ footer {
 
 
 /****END MEDIA TAB HERE****/}
+@media only screen and (max-width: 870px){
+/*******SUPER SMALL MOBILE SCREENS*********/
+	.text_box {
+		color: #fff;
+		padding-left: 5%;
+		width: 25%;
+		top: 50px;
+		position: absolute;
+			
+		h1 {
+			font-family: $font_heading;
+			font-size: 3.5em !important;
+			font-weight: 300;
+			line-height: 1.2em;
+			margin-bottom: 20px;
+		}
+	}
+
+}
