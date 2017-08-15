@@ -378,6 +378,9 @@ header .search {
       z-index: 1;
       text-align: center; }
 
+.nav_overlay {
+  display: none; }
+
 .carousel {
   display: block;
   /*position: absolute;*/
@@ -498,6 +501,9 @@ header .search {
   display: none; }
   .home-grid .home-grid-item {
     display: none; }
+
+.mobile-nav {
+  display: none; }
 
 .row.inside_hero {
   min-height: 250px;
@@ -1081,10 +1087,19 @@ table {
     margin-top: 2%; }
   footer {
     width: 100%; }
-  /****END MEDIA TAB HERE****/ }
+  /****END MEDIA TAB HERE***********************************************************/ }
 
 @media only screen and (max-width: 870px) {
   /*******SUPER SMALL MOBILE SCREENS*********/
+  .search_bar {
+    display: none; }
+  .logo_bar {
+    display: none; }
+  .mobile_navigation {
+    display: block;
+    background-color: #0667b2;
+    width: 100%;
+    height: 80px; }
   .text_box {
     color: #fff;
     padding-left: 5%;
@@ -1099,4 +1114,9 @@ table {
       margin-bottom: 20px; }
   .cta_button {
     position: absolute;
-    left: 15%; } }
+    left: 15%; }
+  .flex_grid {
+    display: inline; }
+  footer {
+    text-align: center;
+    padding-left: 0px; } }
