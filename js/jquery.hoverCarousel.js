@@ -1,4 +1,4 @@
-;(function($){
+(function($){
     "use strict";
 
 
@@ -71,9 +71,6 @@
     // automatic binding to all elements which have the class that is assigned to "bindToClass"
     $.fn.carousel();
 
-   
-        }
-    });
 
 })(jQuery);
 
